@@ -7,9 +7,9 @@ price = list(map(int, sys.stdin.readline().split())) # 리터당 가격
 pivot = price[0]
 result = 0
 
-for i in range(1, len(price)):
-    result += road[i-1]*pivot
+for i in range(len(road)):
     if pivot > price[i]:
-        pivot = price[i] 
+        pivot = price[i]
+    result += pivot*road[i]
 
 print(result)
