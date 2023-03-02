@@ -1,8 +1,9 @@
 A, B = map(int, input().split())
 
 cnt = 0
-while A < B:
-    if A == B:
+while A != B:
+    if A > B:
+        cnt = -2
         break
     elif B%2 == 0:
         B = B//2
@@ -11,9 +12,7 @@ while A < B:
         B = B//10
         cnt += 1
     else:
+        cnt = -2
         break
 
-if A != B:
-    print(-1)
-else:
-    print(cnt+1)
+print(cnt+1)
