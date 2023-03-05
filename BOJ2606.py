@@ -13,9 +13,9 @@ for _ in range(e):
 
 def dfs(v):
     visited[v] = 1
-    for nx in graph[v]:
-        if visited[nx] == 0:
-            dfs(nx)
+    for node in graph[v]:
+        if visited[node] == 0:
+            dfs(node)
 
 dfs(1)
 print(sum(visited) - 1)
