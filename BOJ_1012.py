@@ -8,7 +8,7 @@ def dfs(x, y):
         return False
     
     if graph[x][y] == 1:
-        graph[x][y] = 0
+        graph[x][y] = 0 # 한 번 간 곳은 다시 못 가도록 변경
         for i in range(4):
             dfs(x+dx[i], y+dy[i])
         return True
@@ -32,6 +32,6 @@ for _ in range(T):
         for j in range(M):
             if dfs(i, j):
                 cnt += 1
-                
+
     print(cnt)
     
