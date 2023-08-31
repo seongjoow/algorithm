@@ -29,18 +29,19 @@ dy = [0, 0, -1, 1]
 N = int(input())
 graph = [list(map(int, input().rstrip())) for _ in range(N)]
 result = []
-danji = 0
+# danji = 0
 
 for i in range(N):
     for j in range(N):
         if graph[i][j] == 1:
             cnt = bfs(i, j)
             result.append(cnt)
-            danji += 1
+            # danji += 1
             cnt = 0
 
 result.sort()
 
-print(danji)
+# print(danji)
+print(len(result))
 for i in result:
     print(i)
