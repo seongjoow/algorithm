@@ -8,10 +8,11 @@ b = []
 c = []
 
 for _ in range(N):
-    a.append(input().rstrip())
+    a.append(input().rstrip()) # rstrip() 안 하니 출력 형식이 틀림
 for _ in range(M):
     b.append(input().rstrip())
 
+# 시간 초과 코드
 # for i in a:
 #     if i in b:
 #         c.append(i)
