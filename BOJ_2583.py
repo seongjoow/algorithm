@@ -20,6 +20,7 @@ def dfs(x, y):
 
         if 0<=nx<M and 0<=ny<N and graph[nx][ny]==0:
             dfs(nx, ny)
+            
 
 M, N, K = map(int, input().split()) # 100 이하 자연수 # M: y좌표(행 개수), N: x좌표(열 개수)
 graph = [[0 for _ in range(N)] for _ in range(M)] # 몰랐던 초기화 방법
