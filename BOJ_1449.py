@@ -10,7 +10,7 @@ cnt = 1
 left = leak[0] - 0.5 # 테이프 시작 위치
 
 for i in range(N):
-    # break문을 넣으려다가 계속 틀렸음. break문 필요 없음.
+    # 물을 다 막은 경우 break문을 쓰려 해서 계속 틀렸는데, 필요 없음.
     if left <= leak[i] <= left + L:
         continue
     
