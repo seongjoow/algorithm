@@ -22,5 +22,5 @@ for i in range(1, 13):
             sum += len(graph[j])
         
         if sum == 6:
-            print(i)
+            print(i) # 문제에서 무엇을 출력하라고 했는지 제대로 보자!
             break
