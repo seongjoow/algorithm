@@ -9,10 +9,10 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
 gyo = set(A) & set(B)
-# gyo = list(set(A).intersection(set(B))) # 위와 동일
+# gyo = set(A).intersection(set(B)) # 위와 동일
 
 hap = set(A) | set(B)
-# hap = list(set(A).union(set(B))) # 위와 동일
+# hap = set(A).union(set(B)) # 위와 동일
 
 result = list(hap - gyo)
 
