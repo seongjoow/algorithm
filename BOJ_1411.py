@@ -13,7 +13,6 @@ li = [input().rstrip() for _ in range(N)]
 
 cnt = 0
 
-# for word in li:
 for i in range(N-1): # N 아님 주의.
     for j in range(i+1, N):
         word1 = li[i]
